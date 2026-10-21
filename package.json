@@ -1,0 +1,27 @@
+{
+  "name": "nodejs-express-librarian",
+  "version": "1.0.0",
+  "description": "API sobre una biblioteca",
+  "keywords": [
+    "NodeJS",
+    "ExpressJS",
+    "MySQL2",
+    "API"
+  ],
+  "license": "ISC",
+  "author": "JakelinMishelQuinoMartinez",
+  "type": "module",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon nodejs-express-librarian --quiet",
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^5.3.0",
+    "mysql2": "^3.24.6"
+  },
+  "devDependencies": {
+    "dotenv": "^18.0.8",
+    "nodemon": "^3.1.14"
+  }
+}
