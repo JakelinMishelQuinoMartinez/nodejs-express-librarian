@@ -13,11 +13,14 @@
   "type": "module",
   "main": "app.js",
   "scripts": {
-    "dev": "nodemon nodejs-express-librarian --quiet",
+    "dev": "nodemon app.js --quiet",
     "start": "node app.js"
   },
   "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cookie-parser": "^1.4.7",
     "express": "^5.3.0",
+    "express-validator": "^7.3.2",
     "mysql2": "^3.24.6"
   },
   "devDependencies": {
