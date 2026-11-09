@@ -77,12 +77,17 @@ API REST para administrar una biblioteca desarrollada con Node.js, Express y MyS
 
 La API estará disponible en `http://localhost:3000`.
 
+## Frontend
+
+El frontend se encuentra en el repositorio independiente [Repo del Frontend](https://github.com/JakelinMishelQuinoMartinez/nodejs-express-librarian-frontend). Consulta su README para ejecutarlo. La API permite por defecto solicitudes desde `http://localhost:5500`; configura `FRONTEND_ORIGIN` si utilizas otro origen para el frontend.
+
 ## Variables de entorno
 
 | Variable | Descripción | Valor de ejemplo |
 |---|---|---|
 | `SERVER_PORT` | Puerto del servidor HTTP | `3000` |
 | `COOKIE_SECRET` | Clave usada para firmar cookies | `clave-segura` |
+| `FRONTEND_ORIGIN` | Origen autorizado para el frontend | `http://localhost:5500` |
 | `DB_HOST` | Host de MySQL | `localhost` |
 | `DB_PORT` | Puerto de MySQL | `3306` |
 | `DB_USER` | Usuario de MySQL | `root` |
@@ -264,6 +269,10 @@ Las operaciones de préstamo y venta utilizan transacciones para mantener el sto
 
 ```text
 app.js
+public/
+  index.html
+  styles.css
+  app.js
 src/
   config/
     db.js
